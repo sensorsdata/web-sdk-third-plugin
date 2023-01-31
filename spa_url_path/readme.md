@@ -14,7 +14,7 @@
 ## 集成
 ### ES Module 方式
 ```javascript
-import urlpath from '/spa-url-path/index.es6';
+import urlpath from '/spa-url-path/spa-url-path.es6';
 var registerPlugin = sensors.use(urlpath);
 ```
 
