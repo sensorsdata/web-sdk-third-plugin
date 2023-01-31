@@ -127,12 +127,11 @@ var spaURLPath = {
   init: function (sd) {
     var registerPlugin = sd.use(rgp);
     registerPlugin.hookRegister(function () {
-      var spa_path_value = location.hash.split('?')[0].replace('#', '');
-      if(spa_path_value.indexOf('/') > -1) {
-        const  arr = spa_path_value.split('/').reverse();
-        if (!isNaN(parseFloat(arr[0]))) {
-          spa_path_value = spa_path_value.replace('/' + arr[0], '')
-        }
+      var spa_path_value = '';
+      if (location.search !== '') {
+        spa_path_value = location.pathname;
+      } else {
+        spa_path_value = location.pathname + location.hash.split('?')[0];
       }
       return {
         spa_url_path: spa_path_value
