@@ -1,6 +1,6 @@
 # 使用 meta 中的 description 作为 title 值
 ## 功能
-该插件使用 <meta name="description" content="标题11"/> 这个标签中的 content 值替换<title>的值 作为 $title 的取值。
+该插件使用 &lt;meta name="description" content="标题11"/&gt; 这个标签中的 content 值替换&lt;title&gt;的值 作为 $title 的取值。
 
 ## 集成
 ### ES Module 方式
